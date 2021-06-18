@@ -1,21 +1,6 @@
 """ base class for space """
-from abc import ABCMeta, abstractmethod
+from trainingsim.spaces import Space
 import numpy as np
-
-
-class Space:
-    __metaclass__ = ABCMeta
-
-    def __init__(self):
-        pass
-
-    @abstractmethod
-    def sample(self):
-        pass
-
-    @abstractmethod
-    def contains(self, x):
-        pass
 
 
 class Discrete(Space):
